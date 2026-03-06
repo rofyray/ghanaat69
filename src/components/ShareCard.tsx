@@ -76,7 +76,7 @@ const ShareCard = forwardRef<HTMLDivElement, Props>(
           </div>
         </div>
 
-        <div style={{ fontSize: 16, color: "#8A857B", marginTop: 8, letterSpacing: 3, zIndex: 1 }}>
+        <div style={{ fontSize: 18, color: "#D6D0C4", marginTop: 8, letterSpacing: 3, zIndex: 1 }}>
           {"// HOW GHANAIAN ARE YOU?"}
         </div>
 
@@ -129,7 +129,7 @@ const ShareCard = forwardRef<HTMLDivElement, Props>(
           }}
         >
           <div style={{ fontSize: 56, fontWeight: 900, color: "#FCD116", letterSpacing: 4 }}>
-            {score} <span style={{ color: "#8A857B", fontSize: 36 }}>/ {total}</span>
+            {score} <span style={{ color: "#D6D0C4", fontSize: 36 }}>/ {total}</span>
           </div>
         </div>
 
@@ -137,15 +137,15 @@ const ShareCard = forwardRef<HTMLDivElement, Props>(
         <div style={{ fontSize: 24, fontWeight: 900, color: "#FCD116", marginTop: 16, textTransform: "uppercase", letterSpacing: 4, zIndex: 1 }}>
           &ldquo;{rank.rank}&rdquo;
         </div>
-        <div style={{ fontSize: 14, color: "#8A857B", marginTop: 8, letterSpacing: 2, zIndex: 1 }}>
+        <div style={{ fontSize: 16, color: "#D6D0C4", marginTop: 8, letterSpacing: 2, zIndex: 1 }}>
           {rank.subtitle}
         </div>
 
         {/* CTA */}
-        <div style={{ fontSize: 12, color: "#8A857B", marginTop: 32, letterSpacing: 3, zIndex: 1 }}>
+        <div style={{ fontSize: 14, color: "#D6D0C4", marginTop: 32, letterSpacing: 3, zIndex: 1 }}>
           {"// I DARE YOU TO BEAT MY SCORE"}
         </div>
-        <div style={{ fontSize: 11, color: "rgba(138,133,123,0.5)", marginTop: 6, letterSpacing: 2, zIndex: 1 }}>
+        <div style={{ fontSize: 12, color: "rgba(214,208,196,0.6)", marginTop: 6, letterSpacing: 2, zIndex: 1 }}>
           ghanaat69.vercel.app &middot; #GhanaAt69
         </div>
 
