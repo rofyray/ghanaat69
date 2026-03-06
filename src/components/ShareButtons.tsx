@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { GridSize, RankTier, BingoItem } from "@/types";
-import { buildTwitterShareUrl, buildWhatsAppShareUrl, downloadShareCard } from "@/lib/shareUtils";
+import { buildTwitterShareUrl, buildWhatsAppShareUrl, downloadShareCard, shareToIGStory } from "@/lib/shareUtils";
 import ShareCard from "./ShareCard";
 
 interface Props {
@@ -26,6 +26,17 @@ export default function ShareButtons({
 }: Props) {
   const cardRef = useRef<HTMLDivElement>(null);
   const [downloading, setDownloading] = useState(false);
+  const [sharing, setSharing] = useState(false);
+
+  const handleIGShare = async () => {
+    if (!cardRef.current || sharing) return;
+    setSharing(true);
+    try {
+      await shareToIGStory(cardRef.current);
+    } finally {
+      setSharing(false);
+    }
+  };
 
   const handleDownload = async () => {
     if (!cardRef.current || downloading) return;
@@ -52,14 +63,21 @@ export default function ShareButtons({
         rank={rank}
       />
 
-      <a
-        href={buildTwitterShareUrl(score, total, rank.rank)}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${btnBase} bg-worn-white text-deep-charcoal border-worn-white hover:glow-gold`}
+      <button
+        onClick={handleIGShare}
+        disabled={sharing}
+        className={`${btnBase} bg-gradient-to-r from-[#f09433] via-[#dc2743] to-[#bc1888] text-white border-transparent hover:shadow-[0_0_12px_rgba(220,39,67,0.4)] disabled:opacity-50`}
       >
-        [ SHARE TO X ]
-      </a>
+        {sharing ? "GENERATING..." : "[ SHARE TO IG STORY ]"}
+      </button>
+
+      <button
+        onClick={handleDownload}
+        disabled={downloading}
+        className={`${btnBase} bg-ghana-gold text-ghana-black border-ghana-gold glow-gold disabled:opacity-50`}
+      >
+        {downloading ? "GENERATING..." : "[ SAVE SCORE CARD ]"}
+      </button>
 
       <a
         href={buildWhatsAppShareUrl(score, total, rank.rank)}
@@ -70,13 +88,14 @@ export default function ShareButtons({
         [ SHARE TO WHATSAPP ]
       </a>
 
-      <button
-        onClick={handleDownload}
-        disabled={downloading}
-        className={`${btnBase} bg-ghana-gold text-ghana-black border-ghana-gold glow-gold disabled:opacity-50`}
+      <a
+        href={buildTwitterShareUrl(score, total, rank.rank)}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`${btnBase} bg-worn-white text-deep-charcoal border-worn-white hover:glow-gold`}
       >
-        {downloading ? "GENERATING..." : "[ DOWNLOAD IMAGE ]"}
-      </button>
+        [ SHARE TO X ]
+      </a>
 
       <button
         onClick={onPlayAgain}
