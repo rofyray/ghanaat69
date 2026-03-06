@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, Space_Mono } from "next/font/google";
 import "./globals.css";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 const pressStart = Press_Start_2P({
   weight: "400",
@@ -51,6 +52,7 @@ export default function RootLayout({
         className={`${pressStart.variable} ${spaceMono.variable} font-body antialiased bg-deep-charcoal min-h-screen crt-vignette`}
       >
         {children}
+        <BackgroundMusic />
       </body>
     </html>
   );
