@@ -1,0 +1,139 @@
+{
+  "categories": [
+    {
+      "name": "Food & Drink",
+      "items": [
+        "You've eaten waakye with shito and everything on top",
+        "You know the jollof rice vs. Nigeria argument by heart",
+        "You've eaten banku and okro soup with your hands",
+        "You've chewed sugarcane till your jaw hurt",
+        "Kelewele is your go-to late night snack",
+        "You've fought over the last piece of meat in the soup",
+        "You've drunk pure water from a sachet",
+        "You know 'tea' means Milo, not actual tea",
+        "You've had kenkey with fried fish and pepper",
+        "You've eaten fufu and wished you had more soup",
+        "You've had 'check check' (instant fried rice) as a full meal",
+        "You know the pain of biting into a hot pepper in your stew",
+        "You've bought roasted plantain (kofi brokeman) from the roadside",
+        "You've bought more than one egg and pepper (kosua ne mako) at a go",
+        "You've snacked on aburo ne nkateε (graphic and times) from your pockets"
+      ]
+    },
+    {
+      "name": "Transport & Getting Around",
+      "items": [
+        "You've heard a trotro mate yell 'Circle! Circle!'",
+        "You've experienced 'my change' drama on a trotro",
+        "You've squeezed into a trotro seat meant for 3 with 5 people",
+        "You've been stuck in Accra traffic for 2+ hours",
+        "Your Uber driver called you 3 times for directions",
+        "You've ridden an okada even though they're 'banned'",
+        "You know 'dropping' is not about falling",
+        "You've experienced the Kasoa-Accra traffic on a Monday morning",
+        "You've taken a VIP bus to Kumasi or Cape Coast",
+        "You've stopped over at Linda Dor en route to Kumasi",
+        "You've been beaten by rain while sitting inside a taxi or troski"
+      ]
+    },
+    {
+      "name": "Diaspora Life",
+      "items": [
+        "Someone asked you to bring 'something small' from abroad",
+        "You've packed a barrel or box to send home",
+        "You've been told 'you've changed' when you visit",
+        "You've had to explain where Ghana is to a foreigner",
+        "You pronounce words differently depending on who you're with",
+        "You have an auntie or uncle who is not actually related to you",
+        "You've been guilt-tripped for not calling home enough",
+        "You've said 'I'm coming' and showed up 2 hours later",
+        "You've converted prices to cedis and gasped",
+        "Your suitcase is 70% stuff for other people when traveling home",
+        "You've been asked to sponsor a visa for someone you barely know",
+        "You still overuse 'please' in your sentences"
+      ]
+    },
+    {
+      "name": "Social Media & Pop Culture",
+      "items": [
+        "You've used 'eiii' as a complete sentence",
+        "You've said 'chale' at least 5 times in one conversation",
+        "You've argued about who the best Ghanaian artist is",
+        "You know every word to at least one Daddy Lumba song",
+        "You've laughed till you cried watching a Kumawood movie",
+        "You've shared an Akrobeto news clip",
+        "You've used 'as for you' to start a sentence",
+        "You add 'ooo' to the end of sentences for emphasis",
+        "You've used 'chale' in a WhatsApp voice note",
+        "You've defended Ghana Twitter in an online argument",
+        "You watch KSS for your daily news",
+        "You watch Headless YouTuber for your daily news",
+        "You follow the 'ghanatwitter' IG page"
+      ]
+    },
+    {
+      "name": "Family & Home Life",
+      "items": [
+        "Your parents have threatened you with a slipper",
+        "You've been sent to buy something mid-conversation",
+        "You've heard 'when I was your age...' at least 100 times",
+        "You've attended a funeral that felt like a party",
+        "An older person has called you by your day name",
+        "You know your day name (Kwame, Ama, Yaa, etc.)",
+        "You've been forced to greet every single person in a room",
+        "Your family WhatsApp group is absolute chaos",
+        "You've been asked 'so when are you getting married?' at every gathering",
+        "You've eaten at a family event and been told to take food home too",
+        "Your mum has used 'You want to kill me' to guilt trip you",
+        "A family member has played cupid and tried to set you up with somebody"
+      ]
+    },
+    {
+      "name": "Music & Entertainment",
+      "items": [
+        "You can do at least one azonto move",
+        "You've danced to Ofori Amponsah's 'Otoolege'",
+        "Highlife music hits different at family gatherings",
+        "You've been to a church service that lasted 4+ hours",
+        "The Black Stars have broken your heart at least once",
+        "You've watched TV3 Date Rush",
+        "You've argued GH music vs. Naija music",
+        "You know at least three Sarkodie bars by heart",
+        "You've stayed up late to watch a Black Stars match",
+        "You have highlife in your everyday music playlist"
+      ]
+    },
+    {
+      "name": "Everyday Struggles & Realities",
+      "items": [
+        "Dumsor has ruined your plans at least once",
+        "You've charged your phone at someone else's house",
+        "You've used a flashlight or candle during a blackout",
+        "You've bargained a price down at Makola or Kantamanto",
+        "You've been woken up by a rooster or church speakers",
+        "You've experienced 'Ghana time' - nothing starts on time",
+        "Network issues have made you switch SIM cards",
+        "You've had to 'flash' someone because you had no credit",
+        "You've experienced water rationing and had to store water in buckets",
+        "You've heard 'the system is down' at a government office",
+        "You've swapped a phone at Circle instead of buying a new one"
+      ]
+    },
+    {
+      "name": "Patriotism & National Pride",
+      "items": [
+        "You get emotional hearing the national anthem",
+        "You proudly say 'I'm Ghanaian' to anyone who asks",
+        "March 6 means something special to you",
+        "You know the words to the national pledge",
+        "You know the second stanza of the national anthem",
+        "You know the third stanza of the national anthem",
+        "You've worn kente or African print with pride",
+        "You feel personally offended when someone mistakes Ghana for another country",
+        "You've repped the Black Star in some form - jersey, flag, sticker",
+        "You own a batakari or fugu"
+      ]
+    }
+  ],
+  "freeSquareText": "You are Ghanaian (or wish you were)"
+}

@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ghana-red: #CE1126;
+  --ghana-gold: #FCD116;
+  --ghana-green: #006B3F;
+  --deep-charcoal: #0E0E12;
+  --dark-panel: #16161C;
+  --crt-dark: #1A1A22;
+}
+
+body {
+  color: #D6D0C4;
+  background: var(--deep-charcoal);
+  font-family: var(--font-space-mono), monospace;
+}
+
+/* CRT scan lines overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.12) 2px,
+    rgba(0, 0, 0, 0.12) 3px
+  );
+}
+
+/* Film grain noise overlay */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.04;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+}
+
+/* CRT vignette */
+.crt-vignette {
+  box-shadow: inset 0 0 120px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Neon glow for Ghana-colored elements */
+.glow-gold {
+  box-shadow: 0 0 12px rgba(252, 209, 22, 0.35), 0 0 4px rgba(252, 209, 22, 0.2);
+}
+
+.glow-red {
+  box-shadow: 0 0 12px rgba(206, 17, 38, 0.35);
+}
+
+.glow-green {
+  box-shadow: 0 0 12px rgba(107, 255, 142, 0.25);
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 8px rgba(252, 209, 22, 0.3), 0 0 2px rgba(252, 209, 22, 0.15); }
+  50% { box-shadow: 0 0 24px rgba(252, 209, 22, 0.5), 0 0 8px rgba(252, 209, 22, 0.3); }
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes cell-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.92); }
+  100% { transform: scale(1); }
+}
+
+.animate-cell-pop {
+  animation: cell-pop 0.2s ease-out;
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-count-up {
+  animation: count-up 0.5s ease-out forwards;
+}
+
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s ease-out forwards;
+}
+
+@keyframes flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.8; }
+  94% { opacity: 1; }
+  96% { opacity: 0.9; }
+  97% { opacity: 1; }
+}
+
+.animate-flicker {
+  animation: flicker 4s ease-in-out infinite;
+}
